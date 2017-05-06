@@ -26,7 +26,7 @@
     <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="226.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <MenuBar prefHeight="25.0" prefWidth="433.0" style="-fx-background-color: #1B75BC;" GridPane.columnSpan="3" GridPane.valignment="TOP">
+      <MenuBar prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #1B75BC;" GridPane.columnSpan="3" GridPane.valignment="TOP">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>

@@ -19,11 +19,11 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args);
+
         Connection c = null;
         try {
-            c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
-                    "postgres", "asd");
+            DriverManager.registerDriver(new org.postgresql.Driver());
+            c = ConnectionHandler.getConnection();
             System.out.println("megvan");
         } catch (Exception e) {
             e.printStackTrace();
@@ -31,5 +31,7 @@ public class Main extends Application {
             System.exit(0);
         }
         System.out.println("Opened database successfully");
+        launch(args);
     }
+
 }
